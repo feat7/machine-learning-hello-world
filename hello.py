@@ -19,6 +19,10 @@ url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = pandas.read_csv(url, names=names)
 
+# Docs for pandas.read_csv
+# url -> csv file = buffer/file path
+# names -> list of columns to be used
+
 
 # shape
 # print(dataset.shape)

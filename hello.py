@@ -21,7 +21,7 @@ dataset = pandas.read_csv(url, names=names)
 
 # Docs for pandas.read_csv
 # url -> csv file = buffer/file path
-# names -> list of columns to be used
+# names -> list of columns to be used (set their names)
 # retruns -> DataFrame or TextParser
 
 
@@ -35,10 +35,14 @@ dataset = pandas.read_csv(url, names=names)
 
 # descriptions
 # print(dataset.describe())
-# returns -> describes the DataFrame except NaN values (use include='all' to get for NaN too) 
+# returns -> describes the DataFrame except NaN values (use include='all' to get for NaN too)
 
 # class distribution
 # print(dataset.groupby('class').size())
+# by='class' can be string, dict, etc. string of some column name can be passed here. (it is 'class in this particular code')
+# returns -> GroupBy obj
+
+# metplotlib stuff to draw graphs
 
 # box and whisker plots
 # dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)

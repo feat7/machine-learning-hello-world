@@ -22,16 +22,20 @@ dataset = pandas.read_csv(url, names=names)
 # Docs for pandas.read_csv
 # url -> csv file = buffer/file path
 # names -> list of columns to be used
+# retruns -> DataFrame or TextParser
 
 
 # shape
 # print(dataset.shape)
+# returns -> tuple representing the dimension of the DataFrame
 
 # head
 # print(dataset.head(20))
+# return -> first n rows
 
 # descriptions
 # print(dataset.describe())
+# returns -> describes the DataFrame except NaN values (use include='all' to get for NaN too) 
 
 # class distribution
 # print(dataset.groupby('class').size())
